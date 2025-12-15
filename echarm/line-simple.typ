@@ -1,0 +1,21 @@
+#import "@preview/echarm:0.3.1"
+
+#echarm.render(
+  width: 100%,
+  height: 40%,
+  options: (
+    xAxis: (
+      type: "category",
+      data: ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+    ),
+    yAxis: (
+      type: "value"
+    ),
+    series: (
+      (
+        data: (150, 230, 224, 218, 135, 147, 260),
+        type: "line"
+      )
+    )
+  )
+)
